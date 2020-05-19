@@ -3,14 +3,12 @@
 
 
 class square():
-    """ Initialize these attributes to 0 """
-    width = 0
-    height = 0
+    """ Create a square """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, width, height):
         """ Set square attributes """
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
