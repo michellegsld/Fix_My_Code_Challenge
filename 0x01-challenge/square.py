@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """ Contains a class to create a square """
 
+
 class square():
     """ Initialize these attributes to 0 """
     width = 0
     height = 0
-
 
     def __init__(self, *args, **kwargs):
         """ Set square attributes """
