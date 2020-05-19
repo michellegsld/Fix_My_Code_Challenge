@@ -7,20 +7,20 @@ class square():
 
     def __init__(self, width, height):
         """ Set square attributes """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter_of_my_square(self):
         """ Perimeter of a Square """
-        return (self.width * 2) + (self.height * 2)
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
         """ String version of a square """
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.__width, self.__height)
 
 
 if __name__ == "__main__":
